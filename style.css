@@ -3,21 +3,21 @@
 }
 
 h1{
-    font-size: 45px;
+    font-size:40px;
     color: #EDF5D1    ;
     padding: 20px;
 }
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(auto-fit,minmax(100px,1fr));
-}   
+    grid-template-rows: 1fr 7fr ;
+}       
 
 .header{
     display: grid;
     grid-row: span 1;
     grid-column: span 1;
-    background-color: aqua;
+    background-color: rgb(71, 107, 107);
     grid-column-start: 2;
 }
 
@@ -25,10 +25,33 @@ h1{
     display: grid;
     grid-column: span 1;
     grid-row: span 2;
+    grid-template-rows: 1fr 2fr 2fr;
     background-color: #5cdb95 ;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+ul{
+    list-style-type: none;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+li{
+    padding: 18px;
+}
+a{
+    color: #05386B;
+    text-decoration: none;
+}
+.dashboard{
+    display: grid;
 }
 p{
-    font-size:xx-large;
+    font-size:small;
 }
 
 .content{
@@ -39,6 +62,7 @@ p{
 
 .rightbar{
     display: grid;
+    background-color: #8EE4AF;
 
 }
 
