@@ -1,3 +1,12 @@
+*{
+    font-family:sans-serif  ;
+}
+
+h1{
+    font-size: 45px;
+    color: #EDF5D1    ;
+    padding: 20px;
+}
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -16,7 +25,7 @@
     display: grid;
     grid-column: span 1;
     grid-row: span 2;
-    background-color: beige ;
+    background-color: #5cdb95 ;
 }
 p{
     font-size:xx-large;
@@ -24,5 +33,23 @@ p{
 
 .content{
     display: grid;
-    grid-column-start: 2;
+    grid-template-columns: 3fr 1fr;
+
+}
+
+.rightbar{
+    display: grid;
+
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px ;
+}
+
+.projectCards{
+    display: grid;
+    grid-column: span 1;    
 }
