@@ -114,11 +114,18 @@
     .projects h3{
         color:#05386B;
         display: grid;
-        grid-column: span 2 ;
         grid-template-rows: 50px auto;
+        grid-column-end: -1;
+        grid-column-start: 1;
     }
+
+
 
     .projectCards{
         display: grid;
-        grid-column: span 1;    
+        
     }
+
+    .projects{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
